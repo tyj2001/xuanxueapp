@@ -188,10 +188,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case TPG:
-                tianpanData.clear();
+                tianpanganData.clear();
                 for (int g : order) {
                     String val = map.get(g);
-                    tianpanData.add(val != null ? val : "");
+                    tianpanganData.add(val != null ? val : "");
                 }
                 break;
             case JX:
@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
     private void sortListData() {
         // 天盘天干排布
         // 根据旬首位置和阴阳遁确定天盘
-        tianpanData.clear();
+        tianpanganData.clear();
         jiuxingData.clear();
         bamenData.clear();
         bashenData.clear();
@@ -242,9 +242,9 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < 9; i++) {
             int idx = tianpanOrder[i] - 1;
             if (idx < dipanganData.size() && idx >= 0) {
-                tianpanData.add(dipanganData.get(idx));
+                tianpanganData.add(dipanganData.get(idx));
             } else {
-                tianpanData.add("");
+                tianpanganData.add("");
             }
             // 九星
             if (i < jiuxingOrder.length) {
