@@ -37,7 +37,10 @@ jobs:
           sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0" 2>&1 | tail -5
 
       - name: Configure ANDROID_HOME
-        run: echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
+        run: |
+          echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
+          echo "ANDROID_SDK_ROOT=" >> $GITHUB_ENV
+          echo "Unset ANDROID_SDK_ROOT to avoid conflict"
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
