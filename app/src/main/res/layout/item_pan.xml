@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="4dp"
+    android:minHeight="140dp"
+    android:background="#FFFFFF">
+
+    <!-- 马星空亡 -->
+    <TextView
+        android:id="@+id/tv_makong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- 天盘天干 -->
+    <TextView
+        android:id="@+id/tv_tianpangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2" />
+
+    <!-- 九星1（上，如天禽） -->
+    <TextView
+        android:id="@+id/tv_jiuxing1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#4CAF50"
+        android:visibility="gone" />
+
+    <!-- 特殊天干 -->
+    <TextView
+        android:id="@+id/tv_tiangan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="#FF5722"
+        android:visibility="gone" />
+
+    <!-- 九星2（下） -->
+    <TextView
+        android:id="@+id/tv_jiuxing2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#4CAF50" />
+
+    <!-- 地盘天干 -->
+    <TextView
+        android:id="@+id/tv_dipangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#D32F2F" />
+
+    <!-- 八门 -->
+    <TextView
+        android:id="@+id/tv_bamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FF9800" />
+
+    <!-- 八神 -->
+    <TextView
+        android:id="@+id/tv_bashen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#9C27B0" />
+
+    <!-- 门生克 -->
+    <TextView
+        android:id="@+id/tv_menke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#795548"
+        android:visibility="gone" />
+
+    <!-- 星生克 -->
+    <TextView
+        android:id="@+id/tv_xingke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#795548"
+        android:visibility="gone" />
+
+    <!-- 长生十二宫 -->
+    <TextView
+        android:id="@+id/tv_changsheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#607D8B"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>
